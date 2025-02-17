@@ -1,0 +1,35 @@
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    color: white;
+    font-size: 40px;
+    text-shadow: black 1px 0 10px;
+    text-align: center;
+    background-color: black;
+    background-size: cover;
+}
+
+#info.sunny {
+    background-image: url(./img/sunny.jpg);   
+    color: white;
+    text-shadow: black 1px 0 10px;
+
+}
+
+#info.snowy {
+    background-image: url(./img/snowy.jpg);   
+    color: purple;
+    text-shadow: white 1px 0 10px;
+
+}
+
+#info.rainy {
+    background-image: url(./img/rainy.jpg);   
+    color: white;
+    text-shadow: black 1px 0 10px;
+
+}

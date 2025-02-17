@@ -8,10 +8,29 @@
     <script src="wb.js" type='module'></script>
 </head>
 <body>
+    <label for="city">City</label>
+    <input type="text" id="city" name="city"> 
     <button id="set-location">Set Location</button>
     <button id="current-location">Use Current Location</button>
-    <button id="refresh">Refresh</button>
-    <div id="locationView"></div>
-    <div id="weatherView"></div>
+    <form id="unit-selector">
+        <span>Temperature Units:</span>
+        <input type="radio" id="fahrenheit" name="temp-unit"
+            value="fahrenheit" checked="checked">
+        <label for="fahrenheit">Fahrenheit</label>
+        <input type="radio" id="celsius" name="temp-unit"
+            value="celsius">
+        <label for="celsius">Celsius</label><br>
+        <span>Windspeed Units:</span>
+        <input type="radio" id="mph" name="wind-unit"
+            value="mph" checked="checked">
+        <label for="mph">Miles per hour</label>
+        <input type="radio" id="kmh" name="wind-unit"
+            value="kmh">
+        <label for="kmh">Kilometers per hour</label><br>
+    </form>
+    <div id="info">
+        <div id="locationView">LOADING...</div>
+        <div id="weatherView"></div>
+    </div>
 </body>
 </html>
